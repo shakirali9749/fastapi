@@ -1,9 +1,14 @@
+"""
+you can use validation on body parms , as like as Query params and path parms you will use Body params as well
+"""
+
 from typing import Annotated
 
 from fastapi import Body, FastAPI
 from pydantic import BaseModel, Field
 
 app = FastAPI()
+
 
 
 class Item(BaseModel):
